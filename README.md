@@ -74,26 +74,26 @@ Para desconectar da sala, e voltar para o lounge, basta pressionar a tecla "home
 
 ## Menu de compras automatizado:
 > Para utilizar esta função você deverá pressionando a tecla "Insert" usar as teclas:
-> 1 2 3 4
-> Q W E
-> A S D
-> Z X C V
+> - 1 2 3 4
+> - Q W E
+> - A S D
+> - Z X C V
 
 ### Legendas:
-Insert + 1: Colete e capacete;
-Insert + 2: Colete;
-Insert + 3: Defuse;
-Insert + 4: Todas as granadas;
-Insert + Q: Comprar AWP;
-Insert + W: Comprar AK(TR), Comprar M4(CT);
-Insert + E: Comprar UMP;
-Insert + A: Comprar Eagle;
-Insert + S: Comprar CZ75/TEC9(TR), Comprar CZ75/Five-Seven(CT);
-Insert + D: Comprar p250;
-Insert + Z: Comprar granada HE;
-Insert + X: Comprar granada flashbang;
-Insert + C: Comprar granada smoke;
-Insert + V: Comprar granada molotov/incendiária;
+- Insert + 1: Colete e capacete;
+- Insert + 2: Colete;
+- Insert + 3: Defuse;
+- Insert + 4: Todas as granadas;
+- Insert + Q: Comprar AWP;
+- Insert + W: Comprar AK(TR), Comprar M4(CT);
+- Insert + E: Comprar UMP;
+- Insert + A: Comprar Eagle;
+- Insert + S: Comprar CZ75/TEC9(TR), Comprar CZ75/Five-Seven(CT);
+- Insert + D: Comprar p250;
+- Insert + Z: Comprar granada HE;
+- Insert + X: Comprar granada flashbang;
+- Insert + C: Comprar granada smoke;
+- Insert + V: Comprar granada molotov/incendiária;
 
 
 #### Descrição de outras features:
