@@ -1,30 +1,43 @@
 # SARRAFO's CS:GO Config 🕹
 by L1NDS0N "SARRAFO" FR4NÇ4
 
-### Método de instalação:
+### Método de instalação automatizada
+- [Primeiramente, clique aqui para baixar os arquivos de instalação](https://github.com/L1NDS0N/CS-GO/archive/master.zip), em seguida, extraia onde desejar.
+- Execute o arquivo "Instalador de configuração", e insira o seu SteamID64.
+  - Para encontrar seu SteamID64, consulte a página [SteamIdFinder](https://steamidfinder.com/), e busque pelo id do seu perfil Steam. Como no exemplo abaixo:
+![Exemplificação do SteamIdFinder](https://photos.app.goo.gl/MYz3u2hrNZfWzJQ86)
 
-Baixe e extraia estes arquivos em: `...Steam\userdata\<seuIdDeUsuario>\730\`
+### Método de instalação manual:
 
-> O id de usuário é uma numeração única para cada usuário, nas pastas de userdata poderá ter várias pastas se você já tiver logado com mais de uma conta da steam no seu computador, senão, só haverá a sua.
+Baixe e extraia estes arquivos em: `...Steam\userdata\<seuSteamId64>\730\`
+
+> O id de usuário (SteamId64) é uma numeração única para cada usuário, nas pastas de userdata pode haver várias pastas se você já tiver logado com mais de uma conta da steam no seu computador, senão, só haverá a sua.
 > Exemplo de caminho com id de usuário: `C:\Program Files (x86)\Steam\userdata\1006795664\730\`
 
 ### Modo de uso:
-> Inicialmente, deve-se aplicaar os parâmetros de inicialização do CS:GO abaixo:
+> Inicialmente, deve-se aplicar os parâmetros de inicialização do CS:GO abaixo:
 
 ```
--noforcemaccel
+-novid 
+-noforcemaccel 
 -usenoforcedmparms 
--refresh 144
+-refresh 144 
 -freq 144 
--high
--nod3d9ex
--threads 8
--tickrate 128
--nojoy
+-high 
+-nod3d9ex 
+-threads 8 
+-tickrate 128 
+-nojoy 
 -noaafonts 
-+exec fps 144
--d3d9ex
-+exec autoexec.cfg
+-d3d9ex 
++fps_max 144 
++cl_interp 0 
++cl_interp_ratio 1 
++rate 128000 
++cl_updaterate 128 
++cl_cmdrate 128 
++mat_queue_mode 2 
++exec autoexec.cfg 
 ```
 > para aplicar as opções de inicialização, vá até: Steam > Biblioteca > Counter-Strike: Global Offensive (botão direito) > Propriedades > Definir Opções de Inicialização...
 
