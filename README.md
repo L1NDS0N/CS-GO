@@ -75,13 +75,13 @@ Para visualizar a crosshair fullsize para alinhamento e angulação de smokes, p
 Para falar, segure a tecla Caps Lock.
 
 - [x] Voice enable:
-Para desabilitar o chat de voz dos companheiros de sala, basta pressionar a telca ".".
+Para desabilitar o chat de voz dos companheiros de sala, basta pressionar a telca "*" (asterísco do teclado numérico).
 
 - [x] Voice scale:
-A escala de voz, é o volume da voz dos seus companheiros de time. Para alterar a escala de som, bata utilizar a tecla "-".
+A escala de voz, é o volume da voz dos seus companheiros de time. Para alterar a escala de som, bata utilizar a tecla "-" (subtração do teclado numérico).
 
 - [x] Volume:
-O Volume geral pode ser regulado através da tecla "+".
+O Volume geral pode ser regulado através da tecla "+" (adição do teclado numérico).
 
 - [x] Crosshair colors:
 Para alterar as cores da mira, basta usar o botão mouse4
