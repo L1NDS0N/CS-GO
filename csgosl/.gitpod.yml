@@ -1,1 +1,7 @@
-image: crazymax/csgo-server-launcher
+version: '3.8'
+services: 
+  app:
+  image: crazymax/csgo-server-launcher
+  container_name: csgo-server
+  ports:
+          - 8181:8181
