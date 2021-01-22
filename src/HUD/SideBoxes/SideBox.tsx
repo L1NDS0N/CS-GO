@@ -3,12 +3,14 @@ import './sideboxes.scss'
 import {configs} from './../../App';
 import isSvg from '../isSvg';
 
+import { i18n } from '../../translate/i18n';
+
 export default class SideBox extends React.Component<{ side: 'left' | 'right', hide: boolean}, { title: string, subtitle: string, image?: string }> {
 	constructor(props: any) {
 		super(props);
 		this.state = {
-            title:'Title',
-            subtitle:'Content'
+            title:`${i18n.t('SideBoxes.title')}`,
+            subtitle:`${i18n.t('SideBoxes.content')}`
 		}
 	}
 

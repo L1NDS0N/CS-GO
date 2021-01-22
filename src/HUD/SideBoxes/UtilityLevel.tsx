@@ -2,6 +2,8 @@ import React from "react";
 import Weapon from "./../Weapon/Weapon";
 import { Player, WeaponRaw, Side } from "csgogsi-socket";
 
+import { i18n } from '../../translate/i18n';
+
 interface Props {
     sides?: 'reversed',
     show: boolean;
@@ -11,21 +13,21 @@ interface Props {
 
 function utilityState(amount: number) {
   if (amount === 20) {
-    return "Full";
+    return `${i18n.t('SideBoxes.full')}`;
   }
   if (amount > 14) {
-    return "Great";
+    return `${i18n.t('SideBoxes.great')}`;
   }
   if (amount > 9) {
-    return "Good";
+    return `${i18n.t('SideBoxes.good')}`;
   }
   if (amount > 5) {
-    return "Low";
+    return `${i18n.t('SideBoxes.low')}`;
   }
   if (amount > 0) {
-    return "Poor";
+    return `${i18n.t('SideBoxes.poor')}`;
   }
-  return "None";
+  return `${i18n.t('SideBoxes.none')}`;
 }
 
 function utilityColor(amount: number) {
@@ -93,7 +95,7 @@ export default class SideBox extends React.Component<Props> {
         return (
             <div className={`utilitybox ${this.props.side || ''} ${this.props.show ? "show" : "hide"}`}>
                 <div className="title_container">
-                    <div className="title">Utility Level -&nbsp;</div>
+                    <div className="title">{i18n.t('SideBoxes.utilityLevel')} -&nbsp;</div>
                     <div className="subtitle" style={{color: utilityColor(total)}}>{utilityState(total)}</div>
                 </div>
                 <div className="grenades_container">
