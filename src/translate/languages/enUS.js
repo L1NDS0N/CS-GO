@@ -19,6 +19,10 @@ const messages = {
             PlantDefuse: {
                 defusing: 'is defusing the bomb',
                 planting: 'is planting the bomb',
+            },
+            PauseTimeout: {
+                pause: 'Tactical pause',
+                timeout: 'Technical pause',
             }
         }
     }

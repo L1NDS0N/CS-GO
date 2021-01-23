@@ -1,5 +1,6 @@
 import React from "react";
 import { PhaseRaw } from "csgogsi-socket";
+import { i18n } from '../../translate/i18n';
 
 interface IProps {
     phase: PhaseRaw | null
@@ -10,7 +11,7 @@ export default class Pause extends React.Component<IProps> {
         const { phase } = this.props;
         return (
             <div id={`pause`} className={phase && phase.phase === "paused" ? 'show' : ''}>
-                PAUSE
+                {i18n.t('PauseTimeout.pause')}
             </div>
         );
     }

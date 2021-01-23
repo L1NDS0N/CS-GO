@@ -1,6 +1,6 @@
 import React from "react";
 import { Map, PhaseRaw } from "csgogsi-socket";
-
+import { i18n } from '../../translate/i18n';
 
 interface IProps {
     phase: PhaseRaw | null,
@@ -15,7 +15,7 @@ export default class Timeout extends React.Component<IProps> {
         
         return (
             <div id={`timeout`} className={`${time && time > 2 && phase && (phase.phase === "timeout_t" || phase.phase === "timeout_ct") ? 'show' : ''} ${phase && (phase.phase === "timeout_t" || phase.phase === "timeout_ct") ? phase.phase.substr(8): ''}`}>
-                { team.name } TIMEOUT
+                { team.name } {i18n.t('PauseTimeout.timeout')}
             </div>
         );
     }
