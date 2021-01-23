@@ -14,6 +14,10 @@ const messages = {
                 low: 'Baixo',
                 poor: 'Pobre',
                 none: 'Nenhum',
+            },
+            PlantDefuse: {
+                defusing: 'está defusando a bomba',
+                planting: 'está plantando a bomba',
             }
         }
     }

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { i18n } from '../../translate/i18n';
 import { Timer } from "../MatchBar/MatchBar";
 import { Player } from "csgogsi";
 import * as I from "./../../assets/Icons";
@@ -15,12 +16,12 @@ export default class Bomb extends React.Component<IProps> {
     if(type === "defusing"){
       return <>
         <I.Defuse height={22} width={22} fill="var(--color-new-ct)" />
-        <div className={'CT'}>{player.name} is defusing the bomb</div>
+        <div className={'CT'}>{player.name} {i18n.t('PlantDefuse.defusing')}</div>
       </>;
     }
     return <>
       <I.SmallBomb height={22} fill="var(--color-new-t)"/>
-      <div className={'T'}>{player.name} is planting the bomb</div>
+      <div className={'T'}>{player.name} {i18n.t('PlantDefuse.planting')}</div>
     </>;
   }
   render() {
