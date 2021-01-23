@@ -22,6 +22,9 @@ const messages = {
             PauseTimeout: {
                 pause: 'Pausa tática',
                 timeout: 'Pausa técnica',
+            },
+            MatchOverview: {
+                upcoming: 'Próxima partida',
             }
         }
     }

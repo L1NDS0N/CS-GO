@@ -1,6 +1,7 @@
 import React from 'react';
 import * as I from '../../api/interfaces';
 import TeamLogo from '../MatchBar/TeamLogo';
+import { i18n } from '../../translate/i18n';
 
 interface IProps {
     match: I.Match,
@@ -17,8 +18,8 @@ export default class MatchOverview extends React.Component<IProps> {
         if(!match || !left || !right) return null;
 		return (
             <div className={`match-overview ${show ? 'show':''}`}>
-                <div className="match-overview-title">
-                    Upcoming match
+                <div className="match-overview-title">                    
+                    {i18n.t('MatchOverview.upcoming')}
                 </div>
                 <div className="match-overview-teams">
                     <div className="match-overview-team">
