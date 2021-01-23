@@ -35,6 +35,9 @@ const messages = {
                 picked: 'Escolheu',
                 winner: 'Vencedor',
                 score: 'Placar',
+            },
+            Layout: {
+                alive: 'Jogadores vivos'
             }
         }
     }

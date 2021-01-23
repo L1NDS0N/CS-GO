@@ -17,6 +17,7 @@ import Overview from "../Overview/Overview";
 import Tournament from "../Tournament/Tournament";
 import Pause from "../PauseTimeout/Pause";
 import Timeout from "../PauseTimeout/Timeout";
+import { i18n } from "../../translate/i18n";
 
 interface Props {
   game: CSGO,
@@ -79,7 +80,7 @@ export default class Layout extends React.Component<Props, State> {
     return (
       <div className="layout">
         <div className={`players_alive`}>
-          <div className="title_container">Players alive</div>
+          <div className="title_container">{i18n.t('Layout.alive')}</div>
           <div className="counter_container">
             <div className={`team_counter ${left.side}`}>{leftPlayers.filter(player => player.state.health > 0).length}</div>
             <div className={`vs_counter`}>VS</div>

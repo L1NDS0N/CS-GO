@@ -36,6 +36,9 @@ const messages = {
                 picked: 'Picked',
                 winner: 'Winner',
                 score: 'Score',
+            },
+            Layout: {
+                alive: 'Players alive'
             }
         }
     }
