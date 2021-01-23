@@ -1,6 +1,7 @@
 import React from "react";
 import * as I from "csgogsi-socket";
 import { Match } from "../../api/interfaces";
+import { i18n } from '../../translate/i18n';
 
 interface Props {
   map: I.Map;
@@ -27,7 +28,7 @@ export default class SeriesBox extends React.Component<Props> {
           </div>
         </div>
         <div id="series_container">
-          <div id="series_text">{ bo ? `BEST OF ${bo}` : '' }</div>
+          <div id="series_text">{ bo ? `${i18n.t('MatchBar.bestOf')} ${bo}` : '' }</div>
         </div>
         <div className="container right">
           <div className={`series_wins right `}>

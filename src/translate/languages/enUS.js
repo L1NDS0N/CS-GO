@@ -26,6 +26,10 @@ const messages = {
             },
             MatchOverview: {
                 upcoming: 'Upcoming match',
+            },
+            MatchBar: {
+                bestOf: 'Best of',
+                winnerTeam: 'WINS THE ROUND!',
             }
         }
     }
