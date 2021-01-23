@@ -3,6 +3,7 @@ import * as I from "csgogsi-socket";
 import { Match, Veto } from '../../api/interfaces';
 import TeamLogo from "../MatchBar/TeamLogo";
 import "./mapseries.scss";
+import { i18n } from '../../translate/i18n';
 
 interface IProps {
     match: Match | null;
@@ -34,7 +35,7 @@ class VetoEntry extends React.Component<IVetoProps> {
                 {Object.values((veto.score || ['-','-'])).sort().join(":")}
             </div>
             <div className='active_container'>
-                <div className='active'>Currently playing</div>
+                <div className='active'>{i18n.t('MapSeries.playing')}</div>
             </div>
         </div>
     }
@@ -48,9 +49,9 @@ export default class MapSeries extends React.Component<IProps> {
         return (
             <div className={`map_series_container ${isFreezetime ? 'show': 'hide'}`}>
                 <div className="title_bar">
-                    <div className="picked">Picked</div>
-                    <div className="winner">Winner</div>
-                    <div className="score">Score</div>
+                    <div className="picked">{i18n.t('MapSeries.picked')}</div>
+                    <div className="winner">{i18n.t('MapSeries.winner')}</div>
+                    <div className="score">{i18n.t('MapSeries.score')}</div>
                 </div>
                 {match.vetos.filter(veto => veto.type !== "ban").map(veto => {
                     if(!veto.mapName) return null;

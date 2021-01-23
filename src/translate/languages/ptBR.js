@@ -29,6 +29,12 @@ const messages = {
             MatchBar: {
                 bestOf: 'Melhor de',
                 winnerTeam: 'VENCEU O ROUND!'                
+            },
+            MapSeries: {
+                playing: 'ATUALMENTE EM JOGO',
+                picked: 'Escolheu',
+                winner: 'Vencedor',
+                score: 'Placar',
             }
         }
     }
